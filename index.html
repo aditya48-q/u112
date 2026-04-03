@@ -29,71 +29,91 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
-            <div class="container">
-                <h1 class="hero-name">Aditya Gupta</h1>
-                <h2 class="hero-title">Computer Science Student | Aspiring Software Developer</h2>
-                <p class="hero-tagline">"Building clean and efficient digital experiences"</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <div class="container hero-layout">
+                <div class="hero-content float-soft">
+                    <p class="hero-kicker">Computer Science Student</p>
+                    <h1 class="hero-name">Aditya Gupta</h1>
+                    <h2 class="hero-title">Aspiring Software Developer</h2>
+                    <p class="hero-tagline">
+                        Building clean, efficient, and user-friendly digital experiences with a focus on clarity and craft.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary float-soft-alt">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-accent-card float-soft-alt">
+                    <p class="hero-accent-title">Currently exploring</p>
+                    <p class="hero-accent-body">
+                        Modern front-end practices, clean UI design, and problem-solving through code.
+                    </p>
                 </div>
             </div>
         </section>
-
-        <hr class="divider">
 
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
-                <p class="about-text">
-                    I am a dedicated Computer Science student passionate about software development and creating efficient digital solutions. 
-                    My primary focus lies in mastering problem-solving techniques and building clean, user-centric interfaces. 
-                    I thrive on continuous learning, actively building hands-on projects to grow as a developer, and staying engaged with 
-                    modern development practices to deliver robust, high-quality code.
-                </p>
+                <div class="card about-card float-soft">
+                    <p class="about-text">
+                        I am a dedicated Computer Science student passionate about software development and creating efficient,
+                        thoughtful digital experiences. I enjoy solving problems, refining clean user interfaces, and continuously
+                        building projects to grow as a developer. My goal is to deliver work that feels reliable, polished, and
+                        easy to use.
+                    </p>
+                </div>
             </div>
         </section>
-
-        <hr class="divider">
 
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="container">
                 <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
+                <div class="card skills-card float-soft-alt">
+                    <div class="skills-group">
                         <h3>Programming</h3>
-                        <p>C, C++</p>
+                        <div class="pill-row">
+                            <span class="pill">C</span>
+                            <span class="pill">C++</span>
+                        </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skills-group">
                         <h3>Core</h3>
-                        <p>OOPs, Problem Solving</p>
+                        <div class="pill-row">
+                            <span class="pill">OOPs</span>
+                            <span class="pill">Problem Solving</span>
+                        </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skills-group">
                         <h3>Web</h3>
-                        <p>HTML, CSS</p>
+                        <div class="pill-row">
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                        </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skills-group">
                         <h3>Tools</h3>
-                        <p>AI-assisted Development, Prompt Engineering</p>
+                        <div class="pill-row">
+                            <span class="pill">AI-assisted Development</span>
+                            <span class="pill">Prompt Engineering</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <hr class="divider">
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
-                    
-                    <div class="project-card">
+                    <div class="card project-card float-soft">
                         <div class="project-content">
                             <h3>ProtoLearn – Learning Dashboard</h3>
-                            <p class="project-desc">A productivity-focused learning dashboard with tracking capabilities and upcoming collaboration features.</p>
+                            <p class="project-desc">
+                                A productivity-focused learning dashboard that helps track progress with upcoming collaboration features.
+                            </p>
                             <p class="project-tech"><strong>Tech:</strong> HTML, CSS</p>
                         </div>
                         <div class="project-links">
@@ -102,10 +122,12 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="card project-card float-soft-alt">
                         <div class="project-content">
                             <h3>Portfolio Website</h3>
-                            <p class="project-desc">A modern, responsive personal portfolio designed to showcase projects, skills, and academic background.</p>
+                            <p class="project-desc">
+                                A modern, responsive personal portfolio to present projects, skills, and education cleanly.
+                            </p>
                             <p class="project-tech"><strong>Tech:</strong> HTML, CSS</p>
                         </div>
                         <div class="project-links">
@@ -114,10 +136,12 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="card project-card float-soft">
                         <div class="project-content">
                             <h3>About Me Page</h3>
-                            <p class="project-desc">My foundational HTML & CSS project, focused entirely on semantic structure and clean layout design.</p>
+                            <p class="project-desc">
+                                A foundational HTML &amp; CSS project focused on structure, spacing, and simple typography.
+                            </p>
                             <p class="project-tech"><strong>Tech:</strong> HTML, CSS</p>
                         </div>
                         <div class="project-links">
@@ -126,10 +150,12 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="card project-card float-soft-alt">
                         <div class="project-content">
                             <h3>Responsive Landing Page</h3>
-                            <p class="project-desc">A modern, clean landing page highlighting responsive UI design principles across all device sizes.</p>
+                            <p class="project-desc">
+                                A clean, responsive landing page highlighting modern layout and mobile-friendly UI.
+                            </p>
                             <p class="project-tech"><strong>Tech:</strong> HTML, CSS</p>
                         </div>
                         <div class="project-links">
@@ -137,18 +163,15 @@
                             <a href="#" class="link">GitHub</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
-        <hr class="divider">
 
         <!-- Education Section -->
         <section id="education" class="education">
             <div class="container">
                 <h2 class="section-title">Education</h2>
-                <div class="edu-list">
+                <div class="card edu-card float-soft">
                     <div class="edu-item">
                         <div class="edu-header">
                             <h3>B.Tech CSE (Business Systems)</h3>
@@ -172,17 +195,15 @@
             </div>
         </section>
 
-        <hr class="divider">
-
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
                 <h2 class="section-title">Contact</h2>
-                <div class="contact-details">
-                    <p><strong>Email:</strong> <a href="mailto:adityagupta86548@gmail.com">adityagupta86548@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+918817543941">8817543941</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/adityagupta</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/aditya48-q">github.com/aditya48-q</a></p>
+                <div class="card contact-card float-soft-alt">
+                    <p><strong>Email</strong><span><a href="mailto:adityagupta86548@gmail.com">adityagupta86548@gmail.com</a></span></p>
+                    <p><strong>Phone</strong><span><a href="tel:+918817543941">8817543941</a></span></p>
+                    <p><strong>LinkedIn</strong><span><a href="#">linkedin.com/in/adityagupta</a></span></p>
+                    <p><strong>GitHub</strong><span><a href="https://github.com/aditya48-q">github.com/aditya48-q</a></span></p>
                 </div>
             </div>
         </section>
@@ -190,7 +211,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Aditya Gupta</p>
+            <p>&copy; 2026 Aditya Gupta. Crafted with care using HTML &amp; CSS.</p>
         </div>
     </footer>
 </body>
