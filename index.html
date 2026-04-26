@@ -7,6 +7,14 @@
       name="description"
       content="Aditya (a7di) is a front-end developer building clean, responsive web interfaces with HTML, CSS, and JavaScript. Explore projects, skills, and contact links."
     />
+    <meta property="og:title" content="Aditya (a7di) | Front-End Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore Aditya's portfolio featuring modern UI projects, skills, and contact links."
+    />
+    <meta property="og:image" content="https://example.com/preview-image.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Aditya (a7di) | Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -20,33 +28,41 @@
     <header class="site-header">
       <nav class="top-nav" aria-label="Primary">
         <a class="brand-link" href="#top" aria-label="Go to top of portfolio">a7di</a>
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-actions">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Toggle dark mode">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
     <main id="top" class="container">
       <section class="portfolio-card profile-card hero-card" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <h1 id="hero-title">
-            Hi, I am Aditya
-            <span>I build clean, modern web interfaces.</span>
-          </h1>
+          <h1 id="hero-title">Aditya</h1>
           <p class="hero-tagline">
-            Frontend Developer focused on performance, UI clarity, and modern design.
+            Frontend Developer crafting fast, modern web experiences
+          </p>
+          <p class="hero-value">
+            Focused on performance, UI clarity, and user experience.
           </p>
           <p class="hero-description">
-            I create responsive digital experiences that are fast, accessible, and crafted for real users.
+            I create responsive digital products that are fast, accessible, and built with intention.
           </p>
           <div class="hero-actions">
             <a class="project-button hero-btn hero-btn-primary" href="#projects" aria-label="Jump to projects section">View Projects</a>
             <a class="project-button hero-btn hero-btn-secondary" href="#contact" aria-label="Jump to contact section">Contact Me</a>
+            <a class="project-button hero-btn hero-btn-secondary" href="resume.pdf" aria-label="Download resume" download>
+              Download Resume
+            </a>
           </div>
-          <p class="hero-trust">Focused on responsive and modern UI design.</p>
+          <p class="hero-trust">3+ projects built • Focused on responsive UI</p>
         </div>
 
         <div class="hero-visual">
@@ -141,24 +157,44 @@
 
       <section id="contact" class="portfolio-card links-card" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
-        <div class="links">
-          <a class="link-button icon-text" href="https://www.instagram.com/a7di___/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram
-          </a>
+        <div class="contact-layout">
+          <div class="links" aria-label="Social links">
+            <a class="link-button icon-text" href="https://www.instagram.com/a7di___/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram
+            </a>
 
-          <a class="link-button icon-text" href="https://github.com/aditya48-q" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>GitHub
-          </a>
-          <a class="link-button icon-text" href="mailto:adg88175@gmail.com" aria-label="Send email to Aditya">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>Email
-          </a>
-          <a class="link-button icon-text" href="https://aditya48-q.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Open personal website live link">
-            <i class="fa-solid fa-globe" aria-hidden="true"></i>Personal Website
-          </a>
+            <a class="link-button icon-text" href="https://github.com/aditya48-q" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>GitHub
+            </a>
+            <a class="link-button icon-text" href="mailto:adg88175@gmail.com" aria-label="Send email to Aditya">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>Email
+            </a>
+            <a class="link-button icon-text" href="https://aditya48-q.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Open personal website live link">
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>Personal Website
+            </a>
 
-          <a class="link-button icon-text" href="https://www.linkedin.com/in/aditya-gupta-89a359368/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn
-          </a>
+            <a class="link-button icon-text" href="https://www.linkedin.com/in/aditya-gupta-89a359368/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn
+            </a>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xjgjzjzk"
+            method="POST"
+            aria-label="Contact form"
+          >
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+            <button class="project-button project-button-primary" type="submit">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
@@ -179,5 +215,9 @@
       </div>
       <p class="footer-copy">© 2026 All rights reserved</p>
     </footer>
+    <button class="scroll-to-top" id="scroll-to-top" type="button" aria-label="Scroll to top" title="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script src="script.js"></script>
   </body>
 </html>
